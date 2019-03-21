@@ -15,7 +15,7 @@ class ProviderTableSeeder extends Seeder
             $faker = Faker\Factory::create();
 
             DB::table('providers')->insert([
-                'name' => $faker->company(30),
+                'nome' => $faker->company(30),
                 'created_at' => \Carbon\Carbon::now()
             ]);
         }

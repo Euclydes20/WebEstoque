@@ -17,8 +17,8 @@ class ProductTableSeeder extends Seeder
             DB::table('products')->insert([
                 'descricao' => $faker->text(100),
                 'qtd' => $faker->randomNumber(),
-                'prc_venda' => $faker->randomFloat(2,100, 200),
-                'prc_compra' => $faker->randomFloat(2,100, 200),
+                'prc_venda' => $faker->randomFloat(2, 100, 200),
+                'prc_compra' => $faker->randomFloat(2, 100, 200),
                 'created_at' => \Carbon\Carbon::now()
             ]);
         }
