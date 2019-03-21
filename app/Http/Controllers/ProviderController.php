@@ -2,7 +2,6 @@
 
 namespace WebEstoque\Http\Controllers;
 
-use WebEstoque\Models\Provider;
 use Illuminate\Http\Request;
 
 class ProviderController extends Controller
@@ -41,10 +40,10 @@ class ProviderController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \WebEstoque\Models\Provider  $provider
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Provider $provider)
+    public function show($id)
     {
         //
     }
@@ -52,10 +51,10 @@ class ProviderController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \WebEstoque\Models\Provider  $provider
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Provider $provider)
+    public function edit($id)
     {
         //
     }
@@ -64,10 +63,10 @@ class ProviderController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \WebEstoque\Models\Provider  $provider
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Provider $provider)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -75,10 +74,10 @@ class ProviderController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \WebEstoque\Models\Provider  $provider
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Provider $provider)
+    public function destroy($id)
     {
         //
     }
