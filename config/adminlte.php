@@ -108,18 +108,17 @@ return [
     */
 
     'menu' => [
-        'MAIN NAVIGATION',
+        'PRINCIPAL',
         [
-            'text' => 'Blog',
-            'url'  => 'admin/blog',
-            'can'  => 'manage-blog',
+            'text' => 'Dashboard',
+            'url'  => 'home',
+            'can'  => 'dashboard',
         ],
+        'CADASTRO',
         [
             'text'        => 'Cadastro',
-            'url'         => 'admin/cadastro',
-            'icon'        => 'users',
-            'label'       => 30,
-            'label_color' => 'danger',
+            'url'         => 'classifications',
+            'icon'        => 'database',
         ],
         'ACCOUNT SETTINGS',
         [
